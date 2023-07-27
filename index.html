@@ -41,8 +41,8 @@
     <!-- header section start -->
     <header class="container mx-auto">
         <!-- navbar section -->
-        <div class="navbar text-black lg:bg-pink-color my-12 rounded-full lg:text-white p-9">
-            <div class="navbar-start">
+        <div class="flex justify-between lg:justify-between lg:items-center text-black lg:bg-pink-color md:bg-blue-400 md:items-center my-12 rounded-full lg:text-white p-9">
+            <div class="">
                 <ul class="hidden lg:flex gap-7 text-lg font-medium">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
@@ -50,21 +50,28 @@
                     <li><a href="#all-fruits">All Fruits</a></li>
                 </ul>
             </div>
-            <div class="navbar-center">
+            <div class="flex mr-28 items-center">
                 <img class="w-12 h-14 pr-1" src="images/logo.png" alt="">
-                <h1 class="text-4xl font-bold">Fruit Burst</h1>
+                <h1 class="text-2xl lg:text-4xl font-bold">Fruit Burst</h1>
             </div>
-            <div class="navbar-end">
-                <div class="hidden lg:contents">
-                    <input class="py-4 px-7 rounded-full w-96" type="text" name="search" id="#search"
+            <div class="">
+                <div class="hidden md:contents lg:contents">
+                    <input class="py-4 px-7 md:w-72 rounded-full lg:w-96" type="text" name="search" id="#search"
                         placeholder="Search here">
-                    <div class="absolute pr-4"><i class="fa-solid text-black fa-magnifying-glass"></i></div>
+                    <div class="absolute right-16 top-24 pt-1"><i class="fa-solid text-black fa-magnifying-glass"></i></div>
                 </div>
             </div>
+
+            <div class="lg:hidden md:absolute md:-left-1">
+                <button class="btn btn-ghost ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+              </div>
+
         </div>
 
         <!-- banner section -->
-        <div class="carousel rounded-lg w-full">
+        <div class="carousel container rounded-lg lg:w-full">
             <!-- first slider start -->
             <div id="slide1" class="carousel-item relative w-full">
                 <!--first hero start -->
@@ -72,16 +79,16 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-lg">We supply highly quality organic products</p>
+                            <h1 class="mb-5 text-3xl lg:text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-sm lg:text-lg">We supply highly quality organic products</p>
                             <button class="btn bg-pink-color text-white border-0 capitalize">Shop Now</button>
                         </div>
                     </div>
                 </div>
                 <!--first hero end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide4" class="btn text-white bg-neutral-800 border-0 btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle  text-white bg-neutral-800 border-0">❯</a>
                 </div>
             </div>
             <!-- first slider end -->
@@ -93,16 +100,16 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-lg">We supply highly quality organic products</p>
+                            <h1 class="mb-5 text-3xl lg:text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-sm lg:text-lg">We supply highly quality organic products</p>
                             <button class="btn bg-pink-color text-white border-0 capitalize">Shop Now</button>
                         </div>
                     </div>
                 </div>
                 <!--second hero end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                    <a href="#slide1" class="btn btn-circle text-white bg-neutral-800 border-0">❮</a>
+                    <a href="#slide3" class="btn btn-circle text-white bg-neutral-800 border-0">❯</a>
                 </div>
             </div>
             <!-- second slider end -->
@@ -114,16 +121,16 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-lg">We supply highly quality organic products</p>
+                            <h1 class="mb-5 text-3xl lg:text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-sm lg:text-lg">We supply highly quality organic products</p>
                             <button class="btn bg-pink-color text-white border-0 capitalize">Shop Now</button>
                         </div>
                     </div>
                 </div>
                 <!--third hero end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn btn-circle text-white bg-neutral-800 border-0">❮</a>
+                    <a href="#slide4" class="btn btn-circle text-white bg-neutral-800 border-0">❯</a>
                 </div>
             </div>
             <!-- third slider end -->
@@ -135,16 +142,16 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-lg">We supply highly quality organic products</p>
+                            <h1 class="mb-5 text-3xl lg:text-5xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-sm lg:text-lg">We supply highly quality organic products</p>
                             <button class="btn bg-pink-color text-white border-0 capitalize">Shop Now</button>
                         </div>
                     </div>
                 </div>
                 <!--fourth hero end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    <a href="#slide3" class="btn btn-circle text-white bg-neutral-800 border-0">❮</a>
+                    <a href="#slide1" class="btn btn-circle text-white bg-neutral-800 border-0">❯</a>
                 </div>
             </div>
             <!-- fouth slider end -->
@@ -224,7 +231,7 @@
             </div>
 
             <!-- deal of the day card -->
-            <div class="flex flex-col gap-4 lg:flex-row">
+            <div class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap md:justify-center lg:justify-evenly gap-4 lg:flex-row">
                 <!-- first card -->
                 <div class="card border lg:w-96 bg-white">
                     <figure class="px-10 pt-10">
@@ -249,7 +256,7 @@
                             <input type="checkbox" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                         </div>
                         <!-- details link -->
-                        <a class="text-pink-color mt-2" href="#details">Details</a>
+                        <a class="text-pink-color mt-2" href="#details" target="">Details</a>
                     </div>
                 </div>
 
@@ -345,7 +352,7 @@
 
         <!-- team section started here -->
         <section>
-            <div class="hero  h-max lg:h-[690px] rounded-lg mt-20" style="background-image: url('images/banner1.png');">
+            <div class="hero h-max lg:h-[690px] rounded-lg mt-20" style="background-image: url('images/banner1.png');">
                 <div class="hero-overlay rounded-lg bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="container">
@@ -354,9 +361,9 @@
                             of
                             classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
 
-                        <div class="flex items-center flex-col lg:flex-row">
+                        <div class="flex flex-col items-center md:justify-center md:flex-wrap md:flex-row lg:flex-nowrap lg:flex-row">
                             <!-- team members1 -->
-                            <div class="card w-96">
+                            <div class="card lg:w-96">
                                 <figure class="px-10 pt-10">
                                     <img src="images/member1.png" alt="member1" class="rounded-xl" />
                                 </figure>
@@ -375,7 +382,7 @@
                             </div>
 
                             <!-- team members2 -->
-                            <div class="card w-96">
+                            <div class="card lg:w-96">
                                 <figure class="px-10 pt-10">
                                     <img src="images/member2.png" alt="member2" class="rounded-xl" />
                                 </figure>
@@ -394,7 +401,7 @@
                             </div>
 
                             <!-- team members3 -->
-                            <div class="card w-96">
+                            <div class="card lg:w-96">
                                 <figure class="px-10 pt-10">
                                     <img src="images/member3.png" alt="member3" class="rounded-xl" />
                                 </figure>
@@ -413,7 +420,7 @@
                             </div>
 
                             <!-- team members4 -->
-                            <div class="card w-96">
+                            <div class="card lg:w-96">
                                 <figure class="px-10 pt-10">
                                     <img src="images/member4.png" alt="member4" class="rounded-xl" />
                                 </figure>
